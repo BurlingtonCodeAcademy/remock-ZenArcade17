@@ -1,16 +1,98 @@
 #header {
-  display: grid;
-  
+  outline-style: solid;
+  outline-width: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#body {
-  display: grid;
-  background-color: black;
+.text-large {
+  font-size: 5vw;
+}
+.text-medium {
+  font-size: 2vw;
 }
 
-.item {
-  border: solid 6px black;
+#linediv {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
 
-.icon {
-  background-color: black;
+#line {
+  border: 1px solid grey;
+  width: 400px;
+  height: 2px;
+}
+
+#title {
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+#title-desc {
+  outline-style: solid;
+  outline-width: 1px;
+  padding-top: 10px;
+}
+#top-photos {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+#photos-div {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 90% 10%;
+ text-align: center;
+ grid-template-areas: 
+ "top-cage top-cage top-cage"
+ "text-small text-small text-small";
+ border: solid 1px black;
+}
+
+.top-cage {
+  display: flex;
+  align-items: center;
+  flex-direction: row; 
+  justify-content: space-between;
+  padding: 10px;
+  border: solid 1px black
+}
+#top-button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#quote-box {
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+#pic {
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+}
+
+#main {
+  outline-style: solid;
+  outline-width: 1px;
+  width: 75vw;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer {
+  outline-style: solid;
+  outline-width: 1px;
 }
