@@ -1,0 +1,16 @@
+#header {
+  display: grid;
+  
+}
+#body {
+  display: grid;
+  background-color: black;
+}
+
+.item {
+  border: solid 6px black;
+}
+
+.icon {
+  background-color: black;
+}
