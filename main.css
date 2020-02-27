@@ -82,7 +82,7 @@
   height: 200px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-area: 
+  grid-template-areas: 
   "aliens main-nav-right";
   margin-left: auto;
   margin-right: auto;
@@ -110,15 +110,29 @@
 }
 
 #footer {
-  outline-style: solid;
-  outline-width: 1px;
+  background-color: #d2d2d4;
+}
+#grid-for-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "icon";
 }
 
+
+#get-in-touch {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-evenly;
+}
 .icon {
-  outline-style: solid;
-  outline-width: 2px;
-  display: flex;
-  align-self: flex-end;
-  width: 10px;
-  height: 50x:
+  width: 20px;
+  height: 20px
 }
