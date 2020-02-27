@@ -65,6 +65,7 @@
   color: white;
   padding: 5px 25px;
   margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -72,14 +73,10 @@
 }
 
 #quote-box {
-  outline-style: solid;
-  outline-width: 1px;
-}
-
-#pic {
   width: 100vw;
   height: 20vh;
-  position: absolute;
+  position: relative;
+  overflow: hidden;
 }
 
 #main {
@@ -95,4 +92,13 @@
 #footer {
   outline-style: solid;
   outline-width: 1px;
+}
+
+.icon {
+  outline-style: solid;
+  outline-width: 2px;
+  display: flex;
+  align-self: flex-end;
+  width: 10px;
+  height: 50x:
 }
