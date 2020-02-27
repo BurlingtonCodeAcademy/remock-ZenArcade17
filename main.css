@@ -1,6 +1,4 @@
 #header {
-  outline-style: solid;
-  outline-width: 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +28,6 @@
 }
 
 #title-desc {
-  outline-style: solid;
-  outline-width: 1px;
   padding-top: 10px;
 }
 #top-photos {
@@ -84,9 +80,33 @@
   outline-width: 1px;
   width: 75vw;
   height: 200px;
-  display: block;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-area: 
+  "aliens main-nav-right";
   margin-left: auto;
   margin-right: auto;
+}
+
+#aliens {
+  grid-area: aliens; 
+  border: solid 1px black;
+
+}
+
+#awesome-demo {
+  grid-area: awesome-demo;
+  border: solid 1px black;;
+}
+
+#main-nav-right {
+  grid-area: main-nav-right;
+  border: solid 1px black;;
+}
+
+#of-note {
+  grid-area: of-note;
+  border: solid 1px black;;
 }
 
 #footer {
