@@ -33,9 +33,6 @@
   height: 2px;
 }
 
-#title {
- 
-}
 
 #title-desc {
   padding-top: 10px;
@@ -76,7 +73,7 @@
 
 #footer-button {
   font-size: 16px;
-  margin: 15x;
+  margin-top: 10px;
 }
 .buttonL {
   background-color: rgb(95, 97, 95); 
@@ -192,9 +189,13 @@
 #totally{
   margin-bottom: px;
 }
-/*  - - - - footer  - - - - */ 
+/*  - - - - footer  - - - - */
+
 #footer {
   background-color: #d2d2d4;
+  position: static;
+  width: auto;
+  height: 375px;
 }
 
 #get-in-touch {
@@ -203,20 +204,59 @@
 }
 
 #grid-for-footer {
+  margin: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-    "icon";
+    "form icons"
+     "form icons"
+     "form icons"
+     "form icons";
+  padding-right: 100px;
+  padding-left: 100px;
 }
-
+#form {
+  display: grid;
+  margin: 10px;
+  font-family: Roboto, Courier;
+}
+#comments {
+  height: 50px;
+  width: auto;
+  margin-bottom: 10px;
+}
 #icons {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: space-evenly;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "footer-text footer-text"
+  "icon-flex icon-flex"
+  "icon-flex icon-flex"
+  "icon-flex icon-flex"
+  "icon-flex icon-flex";
+}
+
+#footer-text {
+  grid-area: 1 / span 2;
+}
+
+.icon-flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+h3 { /* <h3> reserved for icon text */
+  font-size: 10px;
+  font-family: Roboto, Courier;
+  text-align: left;
 }
 .icon {
-  width: 20px;
-  height: 20px
+  width: 30px;
+  height: 30px
 }
