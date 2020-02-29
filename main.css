@@ -18,7 +18,6 @@
   font-family: Roboto, Courier;
   font-weight: 300;
 }
-
 .text-small {
   font-size: 16px;
   font-family: Roboto, Courier;
@@ -34,7 +33,7 @@
 #line {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-  width: 400px;
+  width: 600px;
   height: 2px;
 }
 
@@ -117,13 +116,28 @@
 }
 /*  - - - - buttons end - - - - */ 
 
+/*  - - - - quote box - - - - */ 
+
 #quote-box {
-  width: 100vw;
-  height: 20vh;
-  position: static;
-  overflow: hidden;
+  background-image: url("Images/parralax.jpg");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+#center-quote {
+  vertical-align: middle;
+  text-align: center;
+  line-height: 200px;
+}
+#quote-text {
+    position: absolute;
+    z-index: 999;
 }
 
+/* - - - quote box end - - - - */ 
 #main {
   
   width: 75%;
@@ -212,7 +226,7 @@
   background-color: #d2d2d4;
   position: static;
   width: auto;
-  height: 375px;
+  height: 350px;
 }
 
 #get-in-touch {
@@ -221,10 +235,9 @@
 }
 
 #grid-for-footer {
-  margin: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: minmax(275px) 1fr 1fr 1fr 1fr;
   grid-template-areas: 
     "form icons"
      "form icons"
@@ -262,10 +275,10 @@
 .icon-flex{
   display: flex;
   justify-content: flex-start;
+  overflow-wrap: break-word;
   align-items: center;
   padding-right: 15px;
   padding-left: 15px;
-
 }
 
 h3 { /* <h3> reserved for icon text */
