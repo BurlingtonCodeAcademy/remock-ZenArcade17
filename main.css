@@ -98,9 +98,9 @@
   border: none;
   font-family: Roboto, Courier;
   color: white;
-  padding: 5px 15px;
-  text-align: center;
   display: inline-block;
+  text-align: center;
+  width: 35%;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -202,13 +202,37 @@
 
 #main-nav-right {
   border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   
 }
 
+.post{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post-head{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 #of-note {
   border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   
+}
+
+#note-box{
+  background-color: blueviolet;
+  width: 80px;
+  height: 80px;
+  float: left;
 }
 
 .alien{
