@@ -29,18 +29,15 @@
   justify-content: center;
   margin: 20px
 }
-
 #line {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
   width: 600px;
   height: 2px;
 }
-
 #features{
   position: static;
 }
-
 #title-desc {
   padding-top: 10px;
 }
@@ -50,7 +47,6 @@
   flex-direction: column; 
   margin: auto;
 }
-
 #photos-div {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
@@ -60,7 +56,6 @@
  "top-cage top-cage top-cage"
  "text-small text-small text-small";
 }
-
 .top-cage {
   display: flex;
   align-items: center;
@@ -77,7 +72,6 @@
   font-size: 16px;
   margin: 15x;
 }
-
 #footer-button {
   font-size: 16px;
   margin-top: 10px;
@@ -92,7 +86,6 @@
   display: inline-block;
   cursor: pointer;
 }
-
 .buttonS {
   background-color: rgb(0, 255, 255); 
   border: none;
@@ -104,12 +97,10 @@
   cursor: pointer;
   border-radius: 5px;
 }
-
 .buttonL:hover {
   cursor: pointer;
   opacity: 65%;
 }
-
 .buttonS:hover {
   cursor: pointer;
   opacity: 65%;
@@ -136,12 +127,9 @@
     position: absolute;
     z-index: 999;
 }
-
 /* - - - quote box end - - - - */ 
 #main {
-  
   width: 75%;
-  
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
@@ -150,16 +138,12 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 #left-content{
   display: flex;
   position: relative;
   grid-area: left-content;
-  
   flex-direction: column;
-  
 }
-
 #aliens {
   grid-area: aliens; 
   position: relative;
@@ -168,13 +152,10 @@
   display: flex;
   flex-direction: column;
   height: 50%;
-  
 }
 .content-image {
-  background-color: blueviolet;
-  height: 20px;
-  width: 80px;
-
+  height: 200px;
+  width: 300px;
 }
 #awesome-demo {
   grid-area: awesome-demo;
@@ -199,41 +180,27 @@
 
 
 }
-
+#of-note {
+  border: solid 1px black;
+  
+}
 #main-nav-right {
   border: solid 1px black;
 
   
 }
 
-#of-note {
-  border: solid 1px black;
-  
-}
-
-.alien{
-  position: relative;
-}
-
-
-
-#totally{
-  margin-bottom: px;
-}
 /*  - - - - footer  - - - - */
-
 #footer {
   background-color: #d2d2d4;
   position: static;
   width: auto;
   height: 350px;
 }
-
 #get-in-touch {
   text-align: center;
   padding-top: 10px;
 }
-
 #grid-for-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -267,11 +234,9 @@
   "icon-flex icon-flex"
   "icon-flex icon-flex";
 }
-
 #footer-text {
   grid-area: 1 / span 2;
 }
-
 .icon-flex{
   display: flex;
   justify-content: flex-start;
@@ -280,7 +245,6 @@
   padding-right: 15px;
   padding-left: 15px;
 }
-
 h3 { /* <h3> reserved for icon text */
   font-size: 10px;
   font-family: Roboto, Courier;
@@ -289,4 +253,43 @@ h3 { /* <h3> reserved for icon text */
 .icon {
   width: 30px;
   height: 30px
+}
+/*  - - - - mobile footer  - - - - */
+@media screen and (max-width: 500px) {
+  #footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+  }
+  #grid-for-footer {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+  }
+  #form {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+  }
+  #icons {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+  }
+  #get-in-touch{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+  }
 }
