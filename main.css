@@ -29,10 +29,13 @@
   justify-content: center;
   margin: 20px
 }
-#line {
+
+#top-line {
+  width: 600px;
+}
+.line {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-  width: 600px;
   height: 2px;
 }
 #features{
@@ -122,6 +125,7 @@
   vertical-align: middle;
   text-align: center;
   line-height: 200px;
+  font-style: italic;
 }
 #quote-text {
     position: absolute;
@@ -137,6 +141,7 @@
     "left-content right-content";
   margin-left: auto;
   margin-right: auto;
+  grid-gap: 20px;
 }
 #left-content{
   display: flex;
@@ -154,8 +159,8 @@
   height: 50%;
 }
 .content-image {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 100%;
 }
 #awesome-demo {
   grid-area: awesome-demo;
@@ -176,18 +181,16 @@
   grid-template-areas: 
   "main-nav-right"
   "of-note";
-  
-
-
 }
-
+.post-content {
+  border-bottom: solid grey 1px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
 #main-nav-right {
-  border: solid 1px black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
-  
 }
 
 .post{
@@ -200,16 +203,15 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
+#note-chunk {
+  display: flex;
+}
 #of-note {
-  border: solid 1px black;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  
-}
-#main-nav-right {
-  border: solid 1px black;
+  }
+.note-text {
+  margin-bottom: 15px;
 }
 
 #note-box{
@@ -217,6 +219,8 @@
   width: 80px;
   height: 80px;
   float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .alien{
@@ -229,6 +233,7 @@
   position: static;
   width: auto;
   height: 350px;
+  margin-top: 30px;
 }
 #get-in-touch {
   text-align: center;
