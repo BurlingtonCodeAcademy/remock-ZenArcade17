@@ -88,6 +88,7 @@
   text-align: center;
   display: inline-block;
   cursor: pointer;
+  text-decoration: none;
 }
 .buttonS {
   background-color: rgb(0, 255, 255); 
@@ -99,6 +100,7 @@
   width: 35%;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
 }
 .buttonL:hover {
   cursor: pointer;
