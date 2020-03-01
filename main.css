@@ -27,7 +27,8 @@
 #linediv {
   display: flex;
   justify-content: center;
-  margin: 20px
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #top-line {
@@ -146,11 +147,12 @@
   grid-gap: 20px;
 }
 #left-content{
-  display: flex;
-  position: relative;
   grid-area: left-content;
-  flex-direction: column;
+  
 }
+
+
+
 #aliens {
   grid-area: aliens; 
   position: relative;
@@ -226,7 +228,7 @@
 }
 
 .alien{
-  position: relative;
+  
 }
 
 /*  - - - - footer  - - - - */
