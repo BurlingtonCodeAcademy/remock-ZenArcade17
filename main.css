@@ -335,3 +335,17 @@ h3 { /* <h3> reserved for icon text */
     height: auto;
   }
 }
+/*----"Learn More" CSS----*/
+
+#learn-main {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "right-content left-content";
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 20px;
+}
+
