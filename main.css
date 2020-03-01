@@ -349,3 +349,26 @@ h3 { /* <h3> reserved for icon text */
   grid-gap: 20px;
 }
 
+/*----Post-Only CSS----*/
+
+#main-only{
+  display: flex;
+  justify-content: center;
+}
+
+#content-only{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#head-only{
+  padding-bottom: 30px;
+}
+
+#pic-only{
+  padding-bottom: 30px;
+}
+
