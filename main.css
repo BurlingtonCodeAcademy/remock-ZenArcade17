@@ -84,6 +84,8 @@ a {
 #footer-button {
   font-size: 16px;
   margin-top: 10px;
+  margin-right: 70px;
+  justify-content: left;
 }
 .buttonL {
   background-color: rgb(95, 97, 95); 
@@ -338,6 +340,10 @@ h3 { /* <h3> reserved for icon text */
     flex-flow: column;
     width: auto;
     height: auto;
+  }
+  #footer-button {
+    margin: auto;
+    margin-top: 10px;
   }
 }
 /*----"Learn More" CSS----*/
