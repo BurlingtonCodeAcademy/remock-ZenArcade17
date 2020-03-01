@@ -1,14 +1,12 @@
 #body{
   position: static;
 }
-
 #header {
   position: static;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -28,50 +26,6 @@ a {
   font-family: Roboto, Courier;
 }
 /*  - - - - fonts end - - - - */ 
-
-#linediv {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-#top-line {
-  width: 600px;
-}
-.line {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  height: 2px;
-}
-#features{
-  position: static;
-}
-#title-desc {
-  padding-top: 10px;
-}
-#top-photos {
-  display: flex;
-  align-items: center;
-  flex-direction: column; 
-  margin: auto;
-}
-#photos-div {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- grid-template-rows: 90% 10%;
- text-align: center;
- grid-template-areas: 
- "top-cage top-cage top-cage"
- "text-small text-small text-small";
-}
-.top-cage {
-  display: flex;
-  align-items: center;
-  flex-direction: row; 
-  justify-content: space-between;
-  margin: 20px
-}
 /*  - - - - buttons - - - - */ 
 #top-button {
   font-size: 16px;
@@ -120,8 +74,51 @@ a {
 }
 /*  - - - - buttons end - - - - */ 
 
-/*  - - - - quote box - - - - */ 
+/*  - - - - top section, main page - - - - */ 
+#linediv {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#top-line {
+  width: 600px;
+}
+.line {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  height: 2px;
+}
+#features{
+  position: static;
+}
+#title-desc {
+  padding-top: 10px;
+}
+#top-photos {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  margin: auto;
+}
+#photos-div {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 90% 10%;
+ text-align: center;
+ grid-template-areas: 
+ "top-cage top-cage top-cage"
+ "text-small text-small text-small";
+}
+.top-cage {
+  display: flex;
+  align-items: center;
+  flex-direction: row; 
+  justify-content: space-between;
+  margin: 20px
+}
 
+/*  - - - - quote box - - - - */ 
 #quote-box {
   background-image: url("Images/parralax.jpg");
   height: 200px;
@@ -142,6 +139,8 @@ a {
     z-index: 999;
 }
 /* - - - quote box end - - - - */ 
+
+/* - - - main content - - - - */ 
 #main {
   width: 75%;
   display: grid;
@@ -155,11 +154,7 @@ a {
 }
 #left-content{
   grid-area: left-content;
-  
 }
-
-
-
 #aliens {
   grid-area: aliens; 
   position: relative;
@@ -183,7 +178,6 @@ a {
   flex-direction: column;
   height: 50%;
 }
-
 #right-content{
   grid-area: right-content;
   display: grid;
@@ -203,13 +197,11 @@ a {
   flex-direction: column;
   justify-content: space-around;
 }
-
 .post{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .post-head{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -224,7 +216,6 @@ a {
 .note-text {
   margin-bottom: 15px;
 }
-
 #note-box{
   background-color: blueviolet;
   width: 80px;
@@ -234,9 +225,38 @@ a {
   margin-bottom: 15px;
 }
 
-.alien{
-  
+/*----"Learn More" CSS----*/
+
+#learn-main {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "right-content left-content";
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 20px;
 }
+/*----Post-Only CSS----*/
+#main-only{
+  display: flex;
+  justify-content: center;
+}
+#content-only{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#head-only{
+  padding-bottom: 30px;
+}
+#pic-only{
+  padding-bottom: 30px;
+}
+/* - - - main content end - - - - */ 
 
 /*  - - - - footer  - - - - */
 #footer {
@@ -346,40 +366,5 @@ h3 { /* <h3> reserved for icon text */
     margin-top: 10px;
   }
 }
-/*----"Learn More" CSS----*/
-
-#learn-main {
-  width: 75%;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 
-    "right-content left-content";
-  margin-left: auto;
-  margin-right: auto;
-  grid-gap: 20px;
-}
-
-/*----Post-Only CSS----*/
-
-#main-only{
-  display: flex;
-  justify-content: center;
-}
-
-#content-only{
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#head-only{
-  padding-bottom: 30px;
-}
-
-#pic-only{
-  padding-bottom: 30px;
-}
+/*  - - - - footer end - - - - */
 
