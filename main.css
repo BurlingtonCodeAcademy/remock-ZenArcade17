@@ -8,6 +8,11 @@
   flex-direction: column;
   align-items: center;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
 /*  - - - - fonts - - - - */ 
 .text-large {
   font-size: 40px;
